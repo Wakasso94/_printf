@@ -1,0 +1,75 @@
+make: Entering directory `/Users/mac/Desktop/42-project/ft_printf/_printf'
+ 
+make: *** No rule to make target `obj/ft_is/ft_isalnum.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_is/ft_isalpha.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_is/ft_isascii.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_is/ft_isdigit.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_is/ft_isprint.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_mem/ft_bzero.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_mem/ft_calloc.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_mem/ft_memchr.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_mem/ft_memcmp.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_mem/ft_memmove.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_mem/ft_memset.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_put/ft_putchar_fd.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_put/ft_putendl_fd.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_put/ft_putnbr_fd.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_put/ft_putstr_fd.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_to/ft_atoi.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_to/ft_itoa.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_to/ft_tolower.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_to/ft_toupper.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_str/ft_split.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_str/ft_strchr.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_str/ft_strdup.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_str/ft_striteri.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_str/ft_strjoin.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_str/ft_strlcat.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_str/ft_strlcpy.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_str/ft_strlen.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_str/ft_strmapi.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_str/ft_strncmp.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_str/ft_strnstr.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_str/ft_strrchr.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_str/ft_strtrim.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_str/ft_substr.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_lst/ft_lstadd_back.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_lst/ft_lstadd_front.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_lst/ft_lstclear.o', needed by `libft.a'.
+make: *** No rule to make target `obj/ft_lst/ft_lstdelone.o', needed by `libft.a'.
+make: 
+*** No rule to make target `obj/ft_lst/ft_lstiter.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_lst/ft_lstlast.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_lst/ft_lstmap.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_lst/ft_lstnew.o', needed by `libft.a'.
+
+make: *** No rule to make target `obj/ft_lst/ft_lstsize.o', needed by `libft.a'.
+
+make: Leaving directory `/Users/mac/Desktop/42-project/ft_printf/_printf'
+ 
