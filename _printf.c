@@ -30,7 +30,7 @@ int	ft_formats(va_list args, const char format)
 	return (print_length);
 }
 
-int	_printf(const char *str, ...)
+int _printf(const char *format, ...)
 {
 	int		i;
 	va_list	args;
