@@ -6,9 +6,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-
-char *ft_itoa(int n);
 void _putchar(char c, int fd);
+char *ft_itoa(int n);
 
 int	_printf(const char *format, ...);
 int	ft_formats(va_list args, const char format);
@@ -28,4 +27,4 @@ int	ft_num_len(unsigned	int num);
 void ft_put_hex(unsigned int num, const char format);
 int	ft_hex_len(unsigned	int num);
 
-#endif /* MAIN_H */
+#endif
