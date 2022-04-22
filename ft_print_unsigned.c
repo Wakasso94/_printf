@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 int	ft_num_len(unsigned	int num)
 {

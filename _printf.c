@@ -35,10 +35,13 @@ int _printf(const char *format, ...)
 	int		i;
 	va_list	args;
 	int		print_length;
+	const char* str;
 
 	i = 0;
 	print_length = 0;
-	va_start(args, str);
+	va_start(args, format);
+	str = format;
+
 	while (str[i])
 	{
 		if (str[i] == '%')

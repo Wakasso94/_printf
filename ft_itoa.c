@@ -1,16 +1,12 @@
-/*
-*	DESCRIPTION
-*	Allocates (with malloc) and returns a string representing the integer 
-*	received as an argument. Negative numbers must be handled.
-*	PARAMETERS
-*	#1. the integer to convert.
-*	RETURN VALUES
-*	The string representing the integer. NULL if the allocation fails.
-*/
-
 #include "main.h"
-#include <stdlib.h>
-
+/**
+*ft_isneg - checks if a number is negative
+*PARAMETERS
+*@n: the number to check
+*@neg: pointer to the negative flag
+*@tmp: temporary pointer to the number
+*RETURN VALUES
+*/
 static void	ft_isneg(int *n, int *neg, int *tmp)
 {
 	if (*n == -2147483648)
@@ -32,8 +28,14 @@ static void	ft_isneg(int *n, int *neg, int *tmp)
 		*tmp = 0;
 	}
 }
-
-static int	ft_itoa_len(int n)
+/**
+*ft_itoa_len - measures the length of an integer
+*PARAMETERS
+*@n: the integer to measure
+*RETURN VALUES
+*Return: The string length
+*/
+static int ft_itoa_len(int n)
 {
 	int	len;
 
@@ -46,7 +48,15 @@ static int	ft_itoa_len(int n)
 	len++;
 	return (len);
 }
-
+/**
+*ft_itoa_write - writes the string representation of n in the string s
+*PARAMETERS
+*@str: pointer to the string to be written
+*@len: length of the string to be written
+*@n: the integer to convert
+*@tmp: temporary variable
+*RETURN VALUES
+*/
 static void	ft_itoa_write(char *str, int len, int n, int tmp)
 {
 	while (n > 9)
@@ -58,30 +68,38 @@ static void	ft_itoa_write(char *str, int len, int n, int tmp)
 	str[len] = n + '0';
 }
 
-char	*ft_itoa(int n)
+/**
+*ft_itoa - Allocates (malloc) and returns a string representing the integer
+*received as an argument. Negative numbers must be handled.
+*PARAMETERS
+*@n: the integer to convert.
+*RETURN VALUES
+*Return: The string representing the integer. NULL if the allocation fails.
+*/
+char *ft_itoa(int n)
 {
-	int		neg;
-	int		tmp;
-	int		len;
-	char	*str;
+int	neg;
+int	tmp;
+int	len;
+char *str;
 
-	ft_isneg(&n, &neg, &tmp);
-	len = ft_itoa_len(n);
-	if (neg == -1)
-	{
-		str = malloc((len + 2) * sizeof(char));
-		if (!str)
-			return (0);
-		len++;
-		str[0] = '-';
-	}
-	else
-	{
-		str = malloc((len + 1) * sizeof(char));
-		if (!str)
-			return (0);
-	}
-	str[len--] = '\0';
-	ft_itoa_write(str, len, n, tmp);
-	return (str);
+ft_isneg(&n, &neg, &tmp);
+len = ft_itoa_len(n);
+if (neg == -1)
+{
+str = malloc((len + 2) * sizeof(char));
+if (!str)
+	return (0);
+len++;
+str[0] = '-';
+}
+else
+{
+str = malloc((len + 1) * sizeof(char));
+if (!str)
+	return (0);
+}
+str[len--] = '\0';
+ft_itoa_write(str, len, n, tmp);
+return (str);
 }
