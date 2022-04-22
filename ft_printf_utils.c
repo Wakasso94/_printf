@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+*ft_putstr - prints a string
+*PARAMETERS
+*@str: The pointer to the string to be printed
+*RETURN VALUES
+*/
 void ft_putstr(char *str)
 {
 	int	i;
@@ -11,7 +16,13 @@ void ft_putstr(char *str)
 		i++;
 	}
 }
-
+/**
+*ft_printstr - prints a string
+*PARAMETERS
+*@str: The pointer to the string to be printed
+*RETURN VALUES
+*Return: The length of the string
+*/
 int	ft_printstr(char *str)
 {
 	int	i;
@@ -29,11 +40,17 @@ int	ft_printstr(char *str)
 	}
 	return (i);
 }
-
+/**
+*ft_printnbr - prints a number
+*PARAMETERS
+*@n: The number to be printed
+*RETURN VALUES
+*Return: The number of characters printed
+*/
 int	ft_printnbr(int n)
 {
-	int		len;
-	char	*num;
+	int	len;
+	char *num;
 
 	len = 0;
 	num = ft_itoa(n);
@@ -41,7 +58,12 @@ int	ft_printnbr(int n)
 	free(num);
 	return (len);
 }
-
+/**
+*ft_printpercent - prints the percent sign
+*PARAMETERS
+*RETURN VALUES
+*Return: 1
+*/
 int	ft_printpercent(void)
 {
 	write(1, "%", 1);

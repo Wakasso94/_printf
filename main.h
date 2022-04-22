@@ -27,4 +27,5 @@ char *ft_uitoa(unsigned int n);
 int	ft_num_len(unsigned	int num);
 void ft_put_hex(unsigned int num, const char format);
 int	ft_hex_len(unsigned	int num);
-#endif
+
+#endif /* MAIN_H */

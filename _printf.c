@@ -1,11 +1,23 @@
 #include "main.h"
-
+/**
+*ft_printchar - prints a character
+*PARAMETERS
+*@c: The character to be printed
+*RETURN VALUES
+*Return: 1
+*/
 int	ft_printchar(int c)
 {
 	write(1, &c, 1);
 	return (1);
 }
-
+/**
+*ft_formats - formats the string
+*PARAMETERS
+*@args: The arguments to be formatted
+*@format: The format string
+*Return: The length of the string
+*/
 int	ft_formats(va_list args, const char format)
 {
 	int	print_length;
@@ -29,7 +41,14 @@ int	ft_formats(va_list args, const char format)
 		print_length += ft_printpercent();
 	return (print_length);
 }
-
+/**
+*_printf - prints a string
+*PARAMETERS
+*@format: The format string
+*Also any input to be formatted
+*RETURN VALUES
+*Return: The length of the string
+*/
 int _printf(const char *format, ...)
 {
 	int		i;

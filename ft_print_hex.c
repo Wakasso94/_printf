@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+*ft_hex_len - measures a hexadecimal number
+*PARAMETERS
+*@num: The number to be printed
+*RETURN VALUES
+*Return: The length of the number
+*/
 int	ft_hex_len(unsigned	int num)
 {
 	int	len;
@@ -12,8 +18,13 @@ int	ft_hex_len(unsigned	int num)
 	}
 	return (len);
 }
-
-void	ft_put_hex(unsigned int num, const char format)
+/**
+*ft_put_hex - prints a hexadecimal number
+*PARAMETERS
+*@num: The number to be printed
+*RETURN VALUES
+*/
+void ft_put_hex(unsigned int num, const char format)
 {
 	if (num >= 16)
 	{
@@ -33,7 +44,14 @@ void	ft_put_hex(unsigned int num, const char format)
 		}
 	}
 }
-
+/**
+*ft_print_hex - prints a hexadecimal number
+*PARAMETERS
+*@num: The number to be printed
+*@format: The format of the number to be printed
+*RETURN VALUES
+*Return: The length of the number
+*/
 int	ft_print_hex(unsigned int num, const char format)
 {
 	if (num == 0)

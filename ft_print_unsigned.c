@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+*ft_num_len - Returns the length of a number
+*PARAMETERS
+*@num: The number to be measured
+*RETURN VALUES
+*Return: The length of the number
+*/
 int	ft_num_len(unsigned	int num)
 {
 	int	len;
@@ -12,11 +18,17 @@ int	ft_num_len(unsigned	int num)
 	}
 	return (len);
 }
-
-char	*ft_uitoa(unsigned int n)
+/**
+*ft_uitoa - Converts an unsigned int to a string
+*PARAMETERS
+*@n: The number to be converted
+*RETURN VALUES
+*Return: The string representation of the number
+*/
+char *ft_uitoa(unsigned int n)
 {
-	char	*num;
-	int		len;
+	char *num;
+	int	len;
 
 	len = ft_num_len(n);
 	num = (char *)malloc(sizeof(char) * (len + 1));
@@ -31,11 +43,17 @@ char	*ft_uitoa(unsigned int n)
 	}
 	return (num);
 }
-
+/**
+*ft_print_unsigned - prints an unsigned int
+*PARAMETERS
+*@n: The number to be printed
+*RETURN VALUES
+*Return: The length of the number
+*/
 int	ft_print_unsigned(unsigned int n)
 {
-	int		print_length;
-	char	*num;
+	int	print_length;
+	char *num;
 
 	print_length = 0;
 	if (n == 0)
