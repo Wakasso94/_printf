@@ -22,6 +22,7 @@ int	ft_hex_len(unsigned	int num)
 *ft_put_hex - prints a hexadecimal number
 *PARAMETERS
 *@num: The number to be printed
+*@format: The format of the number
 *RETURN VALUES
 */
 void ft_put_hex(unsigned int num, const char format)
